@@ -2,7 +2,6 @@
 #define DELETE_H
 
 #include <QMainWindow>
-#include <vvod.h>
 
 namespace Ui {
 class Delete;

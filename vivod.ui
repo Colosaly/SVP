@@ -41,17 +41,17 @@
     </item>
     <item row="0" column="1">
      <property name="text">
-      <string>FIO</string>
+      <string>ФИО</string>
      </property>
     </item>
     <item row="0" column="2">
      <property name="text">
-      <string>Weight</string>
+      <string>Вес</string>
      </property>
     </item>
     <item row="0" column="3">
      <property name="text">
-      <string>Date</string>
+      <string>Дата</string>
      </property>
     </item>
    </widget>

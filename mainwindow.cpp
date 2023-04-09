@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(Vvodwindow, &Vvod::sendData, this, &MainWindow::recieveData);
     connect(this, &MainWindow::sendData, Vivodwindow, &Vivod::setData);
     connect(Deletewindow, &Delete::deletionData, this, &MainWindow::recievedelData);
+    this->setWindowTitle("Журнал измерений веса пациента");
 }
 
 MainWindow::patient::patient(int id_, int y_, int m_, int d_, int w_, QString FIO_)
@@ -71,5 +72,12 @@ void MainWindow::recievedelData(int id)
         }
     if (!f)
         QMessageBox::critical(this,"Error","Id doesn't exist");
+}
+
+void MainWindow::closeEvent()
+{
+    Vvodwindow->close();
+    Vivodwindow->close();
+    Deletewindow->close();
 }
 

@@ -14,6 +14,7 @@ Vvod::Vvod(QWidget *parent) :
     ui->spinBox_4->setMinimum(1);
     ui->spinBox_4->setMaximum(31);
     ui->spinBox_5->setMaximum(999);
+    this->setWindowTitle("Ввод записи");
 }
 
 Vvod::~Vvod()

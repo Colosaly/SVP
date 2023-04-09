@@ -45,6 +45,7 @@ private:
         patient(int id_, int y_, int m_, int d_, int w_, QString FIO_);
     };
     std::vector <patient> pat;
+    void MainWindow::closeEvent();
 };
 
 #endif // MAINWINDOW\_H

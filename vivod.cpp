@@ -6,6 +6,7 @@ Vivod::Vivod(QWidget *parent) :
     ui(new Ui::Vivod)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Таблица измерений");
 }
 
 Vivod::~Vivod()

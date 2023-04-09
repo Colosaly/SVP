@@ -9,6 +9,7 @@ Delete::Delete(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->spinBox->setMaximum(9999);
+    this->setWindowTitle("Удаление записи");
 }
 
 Delete::~Delete()
