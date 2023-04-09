@@ -70,6 +70,6 @@ void MainWindow::recievedelData(int id)
             f = 1;
         }
     if (!f)
-        QMessageBox::critical(this,"Error","Id doesen't exist");
+        QMessageBox::critical(this,"Error","Id doesn't exist");
 }
 
