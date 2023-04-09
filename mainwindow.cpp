@@ -53,7 +53,7 @@ void MainWindow::recieveData(int id, int y, int m, int d, int w, QString FIO)
     bool f;
     for (int i=0; i<pat.size(); i++)
         if (pat[i].id==id)
-            f=1;
+            f = 1;
     if (!f)
     pat.push_back(patient(id, y, m, d, w, FIO));
     else
@@ -62,8 +62,14 @@ void MainWindow::recieveData(int id, int y, int m, int d, int w, QString FIO)
 
 void MainWindow::recievedelData(int id)
 {
+    bool f;
     for (int i=0; i<pat.size(); i++)
         if (id == pat[i].id)
+        {
             pat.erase(pat.begin()+i);
+            f = 1;
+        }
+    if (!f)
+        QMessageBox::critical(this,"Error","Id doesen't exist");
 }
 
